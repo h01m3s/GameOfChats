@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A0B7049653357564D8B660D /* Pods_GameOfChats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C898144981996CA47E9FD88 /* Pods_GameOfChats.framework */; };
+		DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */; };
+		DB31F42D1EE3C10900284E5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F42C1EE3C10900284E5E /* User.swift */; };
 		DB5415281EE259AB0092F1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415271EE259AB0092F1B8 /* AppDelegate.swift */; };
 		DB54152A1EE259AB0092F1B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415291EE259AB0092F1B8 /* ViewController.swift */; };
 		DB54152D1EE259AB0092F1B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB54152B1EE259AB0092F1B8 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		52B76CB35E0055428256A3AC /* Pods-GameOfChats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.release.xcconfig"; sourceTree = "<group>"; };
 		8C898144981996CA47E9FD88 /* Pods_GameOfChats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfChats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC93F5472271F07D53284724 /* Pods-GameOfChats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.debug.xcconfig"; sourceTree = "<group>"; };
+		DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		DB31F42C1EE3C10900284E5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB5415241EE259AB0092F1B8 /* GameOfChats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfChats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5415271EE259AB0092F1B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5415291EE259AB0092F1B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB31F42B1EE3C0EA00284E5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB31F42C1EE3C10900284E5E /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		DB54151B1EE259AB0092F1B8 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +85,7 @@
 		DB5415261EE259AB0092F1B8 /* GameOfChats */ = {
 			isa = PBXGroup;
 			children = (
+				DB31F42B1EE3C0EA00284E5E /* Model */,
 				DB5415391EE25B0E0092F1B8 /* Controller */,
 				DB5415271EE259AB0092F1B8 /* AppDelegate.swift */,
 				DB54152B1EE259AB0092F1B8 /* Main.storyboard */,
@@ -89,6 +102,7 @@
 			children = (
 				DB54153A1EE25B360092F1B8 /* LoginController.swift */,
 				DB5415291EE259AB0092F1B8 /* ViewController.swift */,
+				DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -227,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */,
 				DB54152A1EE259AB0092F1B8 /* ViewController.swift in Sources */,
 				DB54153B1EE25B360092F1B8 /* LoginController.swift in Sources */,
+				DB31F42D1EE3C10900284E5E /* User.swift in Sources */,
 				DB5415281EE259AB0092F1B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +413,7 @@
 				DB5415381EE259AB0092F1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

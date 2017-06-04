@@ -9,16 +9,40 @@
 import UIKit
 import Firebase
 
-class ViewController: UITableViewController {
+class MessagesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
         
+        let image = UIImage(named: "new_message_icon")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(handleNewMessage))
+        
+//        checkIfUserIsLoggedIn()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        checkIfUserIsLoggedIn()
+    }
+    
+    func handleNewMessage() {
+        let newMessageController = NewMessageController()
+        let navController = UINavigationController(rootViewController: newMessageController)
+        present(navController, animated: true, completion: nil)
+    }
+    
+    func checkIfUserIsLoggedIn() {
         // user is not logged in
         if FIRAuth.auth()?.currentUser?.uid == nil {
             perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        } else {
+            let uid = FIRAuth.auth()?.currentUser?.uid
+            FIRDatabase.database().reference().child("users").child(uid!).observe(.value, with: { (snapshot) in
+                if let dic = snapshot.value as? [String: AnyObject] {
+                    self.navigationItem.title = dic["name"] as? String
+                }
+            }, withCancel: nil)
         }
     }
     
