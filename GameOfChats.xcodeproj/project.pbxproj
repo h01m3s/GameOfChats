@@ -18,6 +18,7 @@
 		DB54153B1EE25B360092F1B8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB54153A1EE25B360092F1B8 /* LoginController.swift */; };
 		DB54153D1EE2705B0092F1B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB54153C1EE2705B0092F1B8 /* GoogleService-Info.plist */; };
 		DB7F211A1EE640B800137B7A /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F21191EE640B800137B7A /* LoginController+handlers.swift */; };
+		DBC8BD111EE8DB2B0095D688 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8BD101EE8DB2B0095D688 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DB54153A1EE25B360092F1B8 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DB54153C1EE2705B0092F1B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB7F21191EE640B800137B7A /* LoginController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		DBC8BD101EE8DB2B0095D688 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		DB5415261EE259AB0092F1B8 /* GameOfChats */ = {
 			isa = PBXGroup;
 			children = (
+				DBC8BD0F1EE8DB0A0095D688 /* Helpers */,
 				DB31F42B1EE3C0EA00284E5E /* Model */,
 				DB5415391EE25B0E0092F1B8 /* Controller */,
 				DB5415271EE259AB0092F1B8 /* AppDelegate.swift */,
@@ -108,6 +111,14 @@
 				DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		DBC8BD0F1EE8DB0A0095D688 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBC8BD101EE8DB2B0095D688 /* Extensions.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		ED864E4678475DD3BE88118C /* Pods */ = {
@@ -250,6 +261,7 @@
 				DB54153B1EE25B360092F1B8 /* LoginController.swift in Sources */,
 				DB31F42D1EE3C10900284E5E /* User.swift in Sources */,
 				DB5415281EE259AB0092F1B8 /* AppDelegate.swift in Sources */,
+				DBC8BD111EE8DB2B0095D688 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
