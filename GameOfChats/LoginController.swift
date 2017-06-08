@@ -11,6 +11,8 @@ import Firebase
 
 class LoginController: UIViewController {
     
+    var messagesController: MessagesViewController?
+    
     let inputsContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor.white
@@ -55,6 +57,7 @@ class LoginController: UIViewController {
             }
             
             // successfully logged in
+            self.messagesController?.fetchUserAndSetupNavBarTitle()
             self.dismiss(animated: true, completion: nil)
             
         })
