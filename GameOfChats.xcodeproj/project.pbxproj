@@ -11,7 +11,7 @@
 		DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */; };
 		DB31F42D1EE3C10900284E5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F42C1EE3C10900284E5E /* User.swift */; };
 		DB5415281EE259AB0092F1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415271EE259AB0092F1B8 /* AppDelegate.swift */; };
-		DB54152A1EE259AB0092F1B8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415291EE259AB0092F1B8 /* MessagesViewController.swift */; };
+		DB54152A1EE259AB0092F1B8 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415291EE259AB0092F1B8 /* MessagesController.swift */; };
 		DB54152D1EE259AB0092F1B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB54152B1EE259AB0092F1B8 /* Main.storyboard */; };
 		DB54152F1EE259AB0092F1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB54152E1EE259AB0092F1B8 /* Assets.xcassets */; };
 		DB5415321EE259AB0092F1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5415301EE259AB0092F1B8 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,7 @@
 		DB54153D1EE2705B0092F1B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB54153C1EE2705B0092F1B8 /* GoogleService-Info.plist */; };
 		DB7F211A1EE640B800137B7A /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7F21191EE640B800137B7A /* LoginController+handlers.swift */; };
 		DBC8BD111EE8DB2B0095D688 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8BD101EE8DB2B0095D688 /* Extensions.swift */; };
+		DBC8BD131EEA15F90095D688 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8BD121EEA15F90095D688 /* ChatLogController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		DB31F42C1EE3C10900284E5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB5415241EE259AB0092F1B8 /* GameOfChats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfChats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5415271EE259AB0092F1B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB5415291EE259AB0092F1B8 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		DB5415291EE259AB0092F1B8 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		DB54152C1EE259AB0092F1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB54152E1EE259AB0092F1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5415311EE259AB0092F1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 		DB54153C1EE2705B0092F1B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB7F21191EE640B800137B7A /* LoginController+handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
 		DBC8BD101EE8DB2B0095D688 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DBC8BD121EEA15F90095D688 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,8 @@
 			children = (
 				DB54153A1EE25B360092F1B8 /* LoginController.swift */,
 				DB7F21191EE640B800137B7A /* LoginController+handlers.swift */,
-				DB5415291EE259AB0092F1B8 /* MessagesViewController.swift */,
+				DBC8BD121EEA15F90095D688 /* ChatLogController.swift */,
+				DB5415291EE259AB0092F1B8 /* MessagesController.swift */,
 				DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */,
 			);
 			name = Controller;
@@ -255,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC8BD131EEA15F90095D688 /* ChatLogController.swift in Sources */,
 				DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */,
-				DB54152A1EE259AB0092F1B8 /* MessagesViewController.swift in Sources */,
+				DB54152A1EE259AB0092F1B8 /* MessagesController.swift in Sources */,
 				DB7F211A1EE640B800137B7A /* LoginController+handlers.swift in Sources */,
 				DB54153B1EE25B360092F1B8 /* LoginController.swift in Sources */,
 				DB31F42D1EE3C10900284E5E /* User.swift in Sources */,
