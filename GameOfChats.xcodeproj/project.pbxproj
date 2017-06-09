@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0B7049653357564D8B660D /* Pods_GameOfChats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C898144981996CA47E9FD88 /* Pods_GameOfChats.framework */; };
+		DB2593131EEA38A500E860D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2593121EEA38A500E860D9 /* Message.swift */; };
 		DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */; };
 		DB31F42D1EE3C10900284E5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31F42C1EE3C10900284E5E /* User.swift */; };
 		DB5415281EE259AB0092F1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5415271EE259AB0092F1B8 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		52B76CB35E0055428256A3AC /* Pods-GameOfChats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.release.xcconfig"; sourceTree = "<group>"; };
 		8C898144981996CA47E9FD88 /* Pods_GameOfChats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameOfChats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC93F5472271F07D53284724 /* Pods-GameOfChats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameOfChats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameOfChats/Pods-GameOfChats.debug.xcconfig"; sourceTree = "<group>"; };
+		DB2593121EEA38A500E860D9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		DB31F4291EE3BC7C00284E5E /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
 		DB31F42C1EE3C10900284E5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB5415241EE259AB0092F1B8 /* GameOfChats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfChats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				DB31F42C1EE3C10900284E5E /* User.swift */,
+				DB2593121EEA38A500E860D9 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				DBC8BD131EEA15F90095D688 /* ChatLogController.swift in Sources */,
 				DB31F42A1EE3BC7C00284E5E /* NewMessageController.swift in Sources */,
 				DB54152A1EE259AB0092F1B8 /* MessagesController.swift in Sources */,
+				DB2593131EEA38A500E860D9 /* Message.swift in Sources */,
 				DB7F211A1EE640B800137B7A /* LoginController+handlers.swift in Sources */,
 				DB54153B1EE25B360092F1B8 /* LoginController.swift in Sources */,
 				DB31F42D1EE3C10900284E5E /* User.swift in Sources */,
