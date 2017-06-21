@@ -59,14 +59,11 @@ class LoginController: UIViewController {
             // successfully logged in
             self.messagesController?.fetchUserAndSetupNavBarTitle()
             self.dismiss(animated: true, completion: nil)
-            
         })
     }
     
-
-    
     let nameSeparatorView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = UIColor(r: 220, g: 220, b: 220)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -125,6 +122,15 @@ class LoginController: UIViewController {
     func handleLoginRegisterChange() {
         let title = loginRegisterSegmentedControl.titleForSegment(at: loginRegisterSegmentedControl.selectedSegmentIndex)
         loginRegisterButton.setTitle(title, for: UIControlState())
+        
+        switch loginRegisterSegmentedControl.selectedSegmentIndex {
+            case 0:
+                profileImageView.isUserInteractionEnabled = false
+            case 1:
+                profileImageView.isUserInteractionEnabled = true
+            default:
+                break
+        }
         
         // change height of inputContainerView
         inputsContainerViewHeightAnchor?.constant = loginRegisterSegmentedControl.selectedSegmentIndex == 0 ? 100 : 150
