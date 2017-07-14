@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GameOfChats/NewMessageController.swift"
+            timestampString = "520399282.266749"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameOfChats.NewMessageController.(fetchUser () -&gt; ()).(closure #1)"
+                  moduleName = "GameOfChats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/h01m3s/Documents/Code/iOS/Swift/GameOfChats/GameOfChats/NewMessageController.swift"
+                  timestampString = "521769430.026591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GameOfChats.NewMessageController.(fetchUser () -&gt; ()).(closure #1)"
+                  moduleName = "GameOfChats"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/h01m3s/Documents/Code/iOS/Swift/GameOfChats/GameOfChats/NewMessageController.swift"
+                  timestampString = "521769430.029937"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "533">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
